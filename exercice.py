@@ -14,11 +14,13 @@ def convert_to_absolute(number: float) -> float:
 
 
 def use_prefixes() -> List[str]:
-    list = ['J','K','L','M','N','O','P','Q']
-    for letter in list:
-        name = list[letter] + 'ack'
-        return name
-    #prefixes, suffixe = 'JKLMNOPQ', 'ack'
+    prefixes, suffixe = 'JKLMNOPQ', 'ack'
+    word_list=[]
+    for letter in prefixes:
+        word_list.append(letter + suffixe)
+
+    return word_list
+
 
 
 
